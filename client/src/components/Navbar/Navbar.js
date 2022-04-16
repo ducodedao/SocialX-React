@@ -3,6 +3,8 @@ import './Navbar.css'
 import { SiAnaconda } from 'react-icons/si'
 import { AiOutlineBars } from 'react-icons/ai'
 import { RiCloseLine } from 'react-icons/ri'
+import Button from '../Button/Button'
+import '../Button/Button.css'
 
 const Navbar = () => {
     const [showMenu, setShowMenu] = useState(false)
@@ -26,21 +28,23 @@ const Navbar = () => {
                     id={showMenu ? 'nav-links-mobile' : 'nav-links-mobile-hide'}
                 >
                     <li>
-                        <a href="#Home">Home</a>
+                        <a href="#home">Home</a>
                     </li>
                     <li>
-                        <a href="#Features">Features</a>
+                        <a href="#features">Features</a>
                     </li>
                     <li>
-                        <a href="#Download">Download</a>
+                        <a href="#download">Download</a>
                     </li>
                     <li>
-                        <a href="#Subscribe">Subscribe</a>
+                        <a href="#subscribe">Subscribe</a>
                     </li>
                     <li className="nav-btn">
-                        <a href="#GetStarted" className="btn btn-dark">
-                            Get Started
-                        </a>
+                        <Button
+                            text={'Learn More'}
+                            btnClass={'btn-dark'}
+                            href={'#faq'}
+                        />
                     </li>
                 </ul>
             </menu>

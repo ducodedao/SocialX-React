@@ -46,24 +46,6 @@
     color: orangered;
 }
 
-a.btn {
-    border-radius: 5px;
-    padding: 5px 8px;
-    margin-left: 1rem;
-    font-weight: 500;
-}
-
-a.btn-dark {
-    background: transparent;
-    border: 2px solid var(--color-white);
-}
-
-a.btn-light {
-    background: var(--color-white);
-    border: 2px solid transparent;
-    color: #0a1930;
-}
-
 .navbar .menu-icons {
     background: transparent;
     border: none;

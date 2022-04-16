@@ -1,7 +1,12 @@
 import React from 'react'
+import './Button.css'
 
-const Button = () => {
-    return <div>Button</div>
+const Button = ({ text, btnClass, href }) => {
+    return (
+        <a href={href} className={`btn ${btnClass}`}>
+            {text}
+        </a>
+    )
 }
 
 export default Button
