@@ -1,11 +1,19 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Features.css'
 import { BsFillBookmarkStarFill } from 'react-icons/bs'
 import phoneFeatures from '../../assets/phone-features.png'
 import Feature from './Feature'
 import { FeatureList } from './data'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const Features = () => {
+    useEffect(() => {
+        AOS.init({
+            duration: 1000,
+        })
+    }, [])
+
     return (
         <section id="features">
             <div className="container features">

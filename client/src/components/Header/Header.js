@@ -1,11 +1,19 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Header.css'
 import phoneHeader from '../../assets/phone-header-bg.png'
 import Button from '../Button/Button'
 import '../Button/Button.css'
 import { BsMouse } from 'react-icons/bs'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const Header = () => {
+    useEffect(() => {
+        AOS.init({
+            duration: 1000,
+        })
+    }, [])
+
     return (
         <section id="header">
             <div className="container header">

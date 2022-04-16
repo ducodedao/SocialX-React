@@ -1,9 +1,17 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { MdOutlineLibraryBooks } from 'react-icons/md'
 import { questions } from './data'
 import Question from './Question'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const Faq = () => {
+    useEffect(() => {
+        AOS.init({
+            duration: 1000,
+        })
+    }, [])
+
     return (
         <section id="faq">
             <div className="container faq">
